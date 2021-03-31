@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+ <meta charset="UTF-8">
+ <title>Insert title here</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script type="text/javascript">
 
-     $(document).ready(function() {
-         
- 		/*
-		  코드 구현
-		
-		*/
-     	   
-     	});
-</script>
+  $(document).ready(function() {
+
+   $("select").on("change", function() {
+
+    $("img").attr("src",$(this).val());
+   });
+
+  });
+ </script>
 </head>
 <body>
 이미지선택하기<br>
